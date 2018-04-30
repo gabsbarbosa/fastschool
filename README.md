@@ -1,2 +1,2 @@
 # fastschool
-Sistema de arquivamento de dados para escolas. 
+Sistema de arquivamento de dados para escolas!
