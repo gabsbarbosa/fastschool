@@ -1,8 +1,10 @@
 
 public class Turma {
-	private String serie;
+	private String serie;//nome
 	private int sala, id;
+	private Professor[] professor;
 	private Aluno[] aluno;
+	private Disciplina[] disciplina;
 	
 	public Turma(String serie, int sala, int id, Aluno[] aluno) {
 		this.serie = serie;

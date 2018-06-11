@@ -1,42 +1,15 @@
 
-public class Aluno {
-	private InformacaoPessoal informacaoPessoal;
-	private Endereco endereco;
-	private Prova prova;
+public class Aluno extends Usuario{
+	private long matricula;
 	
-	public Aluno(InformacaoPessoal informacaoPessoal, Endereco endereco) {
-		this.informacaoPessoal = informacaoPessoal;
+	public Aluno(String nome, String estadoCivil, String alergias, String email, int cpf, int telefoneMovel, int telefoneFixo, char sexo, Endereco endereco, String login, char[] senha, long matricula) {
+		super(nome,estadoCivil,alergias,email,cpf,telefoneMovel,telefoneFixo,sexo,endereco,login,senha);
+		setMatricula(matricula);
 	}
-
-	public InformacaoPessoal getInformacaoPessoal() {
-		return informacaoPessoal;
+	public long getMatricula() {
+		return matricula;
 	}
-
-	public void setInformacaoPessoal(InformacaoPessoal informacaoPessoal) {
-		this.informacaoPessoal = informacaoPessoal;
+	public void setMatricula(long matricula) {
+		this.matricula = matricula;
 	}
-
-	public Endereco getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
-
-	public Prova getProva() {
-		return prova;
-	}
-
-	public void setProva(Prova prova) {
-		this.prova = prova;
-	}
-
-
-
-
-
-
-	
-
 }

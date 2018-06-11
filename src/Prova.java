@@ -2,20 +2,22 @@
 public class Prova {
 	private float unidade1, unidade2, unidade3, unidade4;
 	private int unidade;
+	private Aluno aluno;
 	
-	public Prova(float nota, char unidade) {		
+	public Prova(float nota, char unidade, Aluno aluno) {		
 		if(unidade == 1) {
-			this.unidade1 = nota;
+			setUnidade1(nota);
 		}
 		else if(unidade == 2) {
-			this.unidade2 = nota;
+			setUnidade2(nota);
 		}
 		else if(unidade == 3) {
-			this.unidade3 = nota;
+			setUnidade3(nota);
 		}
 		else if(unidade == 4) {
-			this.unidade4 = nota;
+			setUnidade4(nota);
 		}
+		setAluno(aluno);
 	}
 
 	public float getUnidade1() {
@@ -58,8 +60,12 @@ public class Prova {
 		this.unidade = unidade;
 	}
 
+	public Aluno getAluno() {
+		return aluno;
+	}
 
-
-	
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
+	}
 
 }
