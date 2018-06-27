@@ -1,3 +1,4 @@
+package negocios;
 
 public class Aluno extends Usuario{
 	private long matricula;

@@ -1,3 +1,4 @@
+package negocios;
 
 public class Usuario {
 	private String nome, estadoCivil, alergias, email;

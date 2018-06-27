@@ -1,3 +1,4 @@
+package negocios;
 
 public class Endereco {
 	private String rua, bairro, complemento, cidade, uf, numero;

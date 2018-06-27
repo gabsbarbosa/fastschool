@@ -1,3 +1,4 @@
+package negocios;
 
 public class MuralTurma {
 	private String informacao;

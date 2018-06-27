@@ -1,3 +1,4 @@
+package negocios;
 
 public class Professor extends Usuario{
 	private long siape;

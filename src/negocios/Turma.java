@@ -1,3 +1,4 @@
+package negocios;
 
 public class Turma {
 	private String serie;//nome

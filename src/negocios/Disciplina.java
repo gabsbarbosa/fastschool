@@ -1,3 +1,4 @@
+package negocios;
 
 public class Disciplina {
 	private String nome;

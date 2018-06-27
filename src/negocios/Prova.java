@@ -1,3 +1,4 @@
+package negocios;
 
 public class Prova {
 	private float unidade1, unidade2, unidade3, unidade4;
