@@ -2,13 +2,14 @@ package negocios;
 
 public class Usuario {
 	private String nome, estadoCivil, alergias, email;
-	private int cpf, telefoneMovel, telefoneFixo;
+	private int telefoneMovel, telefoneFixo;
+	private long cpf;
 	private char sexo;
 	private Endereco endereco;
 	private String login;
-	private char[] senha;
+	private char senha;
 	
-	public Usuario(String nome, String estadoCivil, String alergias, String email, int cpf, int telefoneMovel, int telefoneFixo, char sexo, Endereco endereco, String login, char[] senha) {
+	public Usuario(String nome, String estadoCivil, String alergias, String email, long cpf, int telefoneMovel, int telefoneFixo, char sexo, Endereco endereco, String login, char senha) {
 		setNome(nome);
 		setEstadoCivil(estadoCivil);
 		setAlergias(alergias);
@@ -45,10 +46,10 @@ public class Usuario {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getCpf() {
+	public long getCpf() {
 		return cpf;
 	}
-	public void setCpf(int cpf) {
+	public void setCpf(long cpf) {
 		this.cpf = cpf;
 	}
 	public int getTelefoneMovel() {
@@ -81,10 +82,10 @@ public class Usuario {
 	public void setLogin(String login) {
 		this.login = login;
 	}
-	public char[] getSenha() {
+	public char getSenha() {
 		return senha;
 	}
-	public void setSenha(char[] senha) {
+	public void setSenha(char senha) {
 		this.senha = senha;
 	}
 	

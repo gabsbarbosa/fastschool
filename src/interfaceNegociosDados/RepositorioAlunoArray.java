@@ -22,7 +22,18 @@ public class RepositorioAlunoArray implements RepositorioAluno{
 
 	@Override
 	public void atualizar(Aluno aluno) {
-		// TODO Auto-generated method stub
+		int i=0;
+		while(i<=indice) {
+			if(alunos[i] == null) {				
+				System.out.println("Erro procurar aluno RepositorioAlunoArray");
+			}
+			else if(alunos[i].getNome() != null) {
+				if(alunos[i].getNome().equals(aluno.getNome())) {
+					alunos[i] = aluno;
+				}
+			}
+			i++;
+		}
 		
 	}
 
@@ -44,12 +55,22 @@ public class RepositorioAlunoArray implements RepositorioAluno{
 		}
 		return resultado;
 	}
-
 	@Override
 	public void remover(Aluno aluno) {
+		atualizar(null);
 		aluno = null;
-		
-		
+		/*int i=0;
+		while(i<=indice) {
+			if(alunos[i] == null) {				
+				System.out.println("Erro procurar aluno RepositorioAlunoArray");
+			}
+			else if(alunos[i].getNome() != null) {
+				if(alunos[i].getNome().equals(aluno.getNome())) {
+					alunos[i] = null;
+					aluno = null;
+				}
+			}
+			i++;
+		}*/
 	}
-
 }
