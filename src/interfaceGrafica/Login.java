@@ -35,6 +35,7 @@ import javax.swing.UIManager;
 import javax.swing.JProgressBar;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JRadioButton;
 
 public class Login extends JFrame {
 
@@ -72,7 +73,7 @@ public class Login extends JFrame {
 		contentPane.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		setContentPane(contentPane);
 		
-		JInternalFrame internalFrame = new JInternalFrame("");
+		JInternalFrame internalFrame = new JInternalFrame("FASTSCHOOL - Login");
 		internalFrame.getContentPane().setFont(UIManager.getFont("Label.font"));
 		internalFrame.setBounds(101, 68, 240, 153);
 		internalFrame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
@@ -112,16 +113,22 @@ public class Login extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		
-		JProgressBar progressBar_Login = new JProgressBar();
-		progressBar_Login.setBounds(151, 232, 146, 18);
-		contentPane.add(progressBar_Login);
 		btnEntrar.setForeground(new Color(25, 25, 112));
 		btnEntrar.setFont(new Font("Segoe Print", Font.BOLD, 11));
 		btnEntrar.setBounds(96, 89, 78, 23);
 		internalFrame.getContentPane().add(btnEntrar);
-		contentPane.add(internalFrame);
 		
-		progressBar_Login.setVisible(false);
+		JRadioButton rdbtnAdministrador = new JRadioButton("ADM");
+		rdbtnAdministrador.setBounds(6, 7, 47, 23);
+		internalFrame.getContentPane().add(rdbtnAdministrador);
+		
+		JRadioButton rdbtnProfessor = new JRadioButton("Professor");
+		rdbtnProfessor.setBounds(77, 7, 71, 23);
+		internalFrame.getContentPane().add(rdbtnProfessor);
+		
+		JRadioButton rdbtnAluno = new JRadioButton("Aluno");
+		rdbtnAluno.setBounds(173, 7, 55, 23);
+		internalFrame.getContentPane().add(rdbtnAluno);
+		contentPane.add(internalFrame);
 	}
 }

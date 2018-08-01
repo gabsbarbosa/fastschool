@@ -2,7 +2,7 @@ package interfaceNegociosDados;
 
 import negocios.Usuario;
 
-public class RepositorioUsuarioArray implements RepositorioUsuario{
+public class RepositorioUsuarioArray implements RepositorioUsuario {
 	
 	private Usuario[] usuarios;
 	private int indice;

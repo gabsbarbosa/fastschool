@@ -8,7 +8,7 @@ public class Turma {
 	private Disciplina[] disciplina;
 	
 	public Turma(String serie, int sala, int id) {
-		this.serie = serie;
+	this.serie = serie;
 		this.sala = sala;
 		this.id = id;
 		this.aluno = aluno;
